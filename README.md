@@ -44,17 +44,17 @@ salen en cero — el resto del reporte no se afecta.
 
 Este repo vive independiente y se trae a cada proyecto de cliente con
 `git subtree`, igual que `mba_purchase_order_format` o
-`sale_line_pricelist`:
+`sale_line_pricelist`. La rama de trabajo es **18.0**:
 
 ```bash
 git remote add mba_estados_financieros_mis https://github.com/DevOpsMBAConsultings/mba_estados_financieros_mis.git
-git subtree add --prefix=mba_estados_financieros_mis mba_estados_financieros_mis main --squash
+git subtree add --prefix=mba_estados_financieros_mis mba_estados_financieros_mis 18.0 --squash
 ```
 
 Para traer actualizaciones futuras del módulo:
 
 ```bash
-git subtree pull --prefix=mba_estados_financieros_mis mba_estados_financieros_mis main --squash
+git subtree pull --prefix=mba_estados_financieros_mis mba_estados_financieros_mis 18.0 --squash
 ```
 
 ## Dónde encontrar los reportes
